@@ -1,0 +1,27 @@
+.navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: #242424;
+
+	.menu{
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+
+		.menu-btn{
+			background-color: transparent;
+			border: 0;
+
+			&:hover{
+				cursor: pointer;
+				color: lightgray;
+				border-bottom: 1px solid lightgray;
+			}
+		}
+	}
+}
