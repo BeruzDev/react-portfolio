@@ -6,21 +6,29 @@
 	padding: 1rem 2rem;
 	display: flex;
 	justify-content: space-between;
-	background-color: #242424;
+	backdrop-filter: blur(10px);
 
 	.menu{
 		display: flex;
 		flex-direction: row;
-		gap: 1rem;
+		gap: 2rem;
 
 		.menu-btn{
 			background-color: transparent;
 			border: 0;
+			transition: transform 0.3s ease, color 0.3s ease;
 
 			&:hover{
 				cursor: pointer;
-				color: lightgray;
-				border-bottom: 1px solid lightgray;
+				transform: scale(1.2);
+			}
+		}
+
+		.theme-btn{
+			transition: transform 0.3s ease, color 0.3s ease;
+
+			&:hover{
+				color: darkkhaki;
 			}
 		}
 	}
