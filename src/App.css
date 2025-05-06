@@ -21,6 +21,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  ::-webkit-scrollbar{
+    width: 0;
+  }
 }
 
 * {
@@ -81,6 +85,19 @@
   }
 }
 
+@media (min-width: 2560px) {
+  .app{
+    section{
+      padding: 5rem 15%;
+    }
+
+    footer{
+      padding: .5rem 15%;
+    }
+
+  }
+}
+
 /* 
 MEDIA QUERYS
 
@@ -88,13 +105,8 @@ MEDIA QUERYS
 
 }
 
-@media (min-width: 900px) and (max-width: 1439px) {
+
+@media (min-width: 2560px) {
 
 }
-
-@media (min-width: 1440px) {
-
-}
-
-
 */
