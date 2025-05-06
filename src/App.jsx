@@ -4,7 +4,7 @@ import About from './pages/About/About.jsx'
 import Skills from './pages/Skills/Skills.jsx'
 import Projects from './pages/Projects/Projects.jsx'
 import Contact from './pages/Contact/Contact.jsx'
-import useTheme from './hooks/useTheme.js'
+import useTheme from './Hooks/useTheme.js'
 import { Heart } from 'lucide-react'
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
       </main>
       <footer>
         <p>Coded by BeruzDev</p>
-        <Heart size={10} strokeWidth={2} className='footer-icon'/>
+        <Heart size={10} strokeWidth={2} className="footer-icon" />
       </footer>
     </div>
   )
