@@ -7,11 +7,12 @@
   display: flex;
   justify-content: space-between;
 	align-items: center;
-
+	
 	.logo{
 		font-size: 1rem;
 		padding: .5rem;
 		backdrop-filter: blur(10px);
+		border-radius: 1rem;
 	}
 
   .menu-cont {
@@ -19,6 +20,8 @@
     display: flex;
 		align-items: center;
     gap: 2rem;
+		padding: 0 .5rem;
+		border-radius: 1rem;
 
     .menu {
       display: flex;
@@ -46,6 +49,7 @@
 			align-items: flex-start;
 
 			.theme-btn {
+				margin-top: 5px;
 				background-color: transparent;
 				border: 0;
 				transition: transform 0.3s ease, color 0.3s ease;
@@ -76,6 +80,7 @@
 				background-color: transparent;
 				border: 0;
 				transition: transform 0.3s ease, color 0.3s ease;
+				margin-top: 5px;
 
 				&:hover{
 					transform: scale(1.2);
