@@ -1,5 +1,6 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar.jsx'
+import Home from './pages/Home/Home.jsx'
 import About from './pages/About/About.jsx'
 import Skills from './pages/Skills/Skills.jsx'
 import Projects from './pages/Projects/Projects.jsx'
@@ -14,6 +15,9 @@ function App() {
     <div className={`app ${theme}`}>
       <Navbar toggleTheme={toggleTheme} isDark={isDark} />
       <main>
+        <section id="home">
+          <Home />
+        </section>
         <section id="about">
           <About />
         </section>

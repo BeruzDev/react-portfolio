@@ -8,7 +8,16 @@ const Navbar = ({ toggleTheme, isDark }) => {
 
   return (
     <div className="navbar">
-      <div className="logo">Albert Castro</div>
+      <button
+        className="logo"
+        onClick={() => {
+          document
+            .getElementById('home')
+            .scrollIntoView({ behavior: 'smooth' })
+        }}
+      >
+        Albert Castro
+      </button>
       <div className="menu-cont">
         <div className="menu">
           <button
