@@ -1,16 +1,4 @@
-@font-face {
-  font-family: 'poppins';
-  src: url('./assets/Font/Poppins/Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'poppins';
-  src: url('./font/poppins/Poppins-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
 
 :root {
   font-family: 'poppins';
@@ -22,7 +10,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     width: 0;
   }
 }
@@ -34,67 +22,66 @@
   font-family: poppins;
 }
 
-.app{
+.app {
   position: relative;
 
-  section{
+  section {
     min-height: 100vh;
     padding: 5rem 2rem;
     box-sizing: border-box;
   }
 
-  footer{
+  footer {
     position: fixed;
     display: flex;
     align-items: center;
     gap: 3px;
     bottom: 0;
-    padding: .5rem;
+    padding: 0.5rem;
     font-size: 10px;
     backdrop-filter: blur(10px);
 
-    .footer-icon{
+    .footer-icon {
       color: lightcoral;
     }
   }
 }
 
-.dark{
+.dark {
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  button{
+  button {
     color: rgba(255, 255, 255, 0.87);
 
-    &:hover{
+    &:hover {
       color: rgba(177, 177, 177, 0.87);
     }
   }
 }
 
-.light{
+.light {
   color: #242424;
   background-color: #f0f0f0;
 
-  button{
+  button {
     color: #242424;
 
-    &:hover{
+    &:hover {
       color: rgba(177, 177, 177, 0.87);
     }
   }
 }
 
 @media (min-width: 2560px) {
-  .app{
-    section{
+  .app {
+    section {
       padding: 5rem 15%;
     }
 
-    footer{
-      padding: .5rem 15%;
+    footer {
+      padding: 0.5rem 15%;
     }
-
   }
 }
 
