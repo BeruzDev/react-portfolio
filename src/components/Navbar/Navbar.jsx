@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../Styles/Navbar.css'
-import { useHamburguer } from '../../Hooks/useHamburguer.js'
+import '../../styles/Navbar.css'
+import { useHamburguer } from '../../hooks/useHamburguer.js'
 import { Sun, SunMoon, Menu, X } from 'lucide-react'
 
 const Navbar = ({ toggleTheme, isDark }) => {
