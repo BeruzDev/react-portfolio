@@ -16,7 +16,8 @@ function App() {
       <Navbar toggleTheme={toggleTheme} isDark={isDark} />
       <main>
         <section id="home">
-          <Home />
+          <Home isDark={isDark}
+          />
         </section>
         <section id="about">
           <About />
