@@ -182,6 +182,25 @@
 					}
 				}
 			}
+
+			.small-btns{
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+
+				.rrss-small-btn{
+					background-color: transparent;
+					border: 0;
+					width: 4em;
+					height: 4em;
+
+					.rrss-icon{
+						width: 4em;
+						height: 4em;
+					}
+				}
+			}
 		}
 	}
 	} 

@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react'
 
 export const useHamburguer = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 899)
+	const [isSmallMobile, setIsSmallMobile] = useState(window.innerWidth <= 500);
   const [isOpen, setIsOpen] = useState(false)
 
   const updateWindowSize = () => {
 		setIsMobile(window.innerWidth <= 899)
+		setIsSmallMobile(window.innerWidth <= 500)
 	}
 
 	useEffect(() => {
@@ -18,5 +20,5 @@ export const useHamburguer = () => {
 
   const toggleMenu = () => setIsOpen((prev) => !prev)
 
-  return { isMobile, isOpen, toggleMenu }
+  return { isMobile, isSmallMobile, isOpen, toggleMenu }
 }
