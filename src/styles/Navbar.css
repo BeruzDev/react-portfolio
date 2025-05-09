@@ -78,12 +78,16 @@
 
 		.menu-cont{
 			gap: .5rem;
+			backdrop-filter: none;
 
 			.menu{
 				display: none;
 			}
 
 			.hamburguer-toggle{
+				backdrop-filter: blur(10px);
+				border-radius: 10px;
+				padding: .5rem;
 				background-color: transparent;
 				border: 0;
 				transition: transform 0.3s ease, color 0.3s ease;
@@ -96,12 +100,11 @@
 			}
 		
 			.hamburguer{
-				position: absolute;
+				background-color: transparent;
+				position: fixed;
 				right: 1rem;
 				top: 3em;
 				padding: .5rem;
-				border-radius: 10px;
-				backdrop-filter: blur(10px);
 				display: flex;
 				flex-direction: column;
 				align-items: flex-start;
@@ -109,6 +112,9 @@
 				transition: max-height 1s ease, opacity 1s ease;
 
 					.menu-btn {
+						border-radius: 10px;
+						backdrop-filter: blur(10px);
+						padding: .5rem;
 						background-color: transparent;
 						border: 0;
 						transition: transform 0.3s ease, color 0.3s ease;
@@ -121,13 +127,13 @@
 			}
 
 			.hamburguer.open{
-				max-height: 150px;
+				max-height: 500px;
 				opacity: 1;
-
+				
 				.menu-btn{
+					font-size: 1rem;
 					transform: translateY(-20px);
 					opacity: 0;
-
 					animation: slideIn 0.3s ease forwards;
 
 						&:nth-child(1){
@@ -146,6 +152,9 @@
 			}
 
 			.theme{
+				padding: .5rem;
+				backdrop-filter: blur(10px);
+				border-radius: 1rem;
 				padding: .5rem;
 			}
 		}

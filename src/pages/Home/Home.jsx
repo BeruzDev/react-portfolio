@@ -41,17 +41,17 @@ const Home = ({ isDark }) => {
           </button>
         </div>
         <div className="rrss">
+        <button
+            className='rrss-btn'
+            onClick={() => window.open('https://www.linkedin.com/in/albert-castro-albacete-38204615a/')}
+          >
+            <LinkedinIcon className='rrss-icon'/>
+          </button>
           <button
             className='rrss-btn'
             onClick={() => window.open('https://github.com/BeruzDev')}
           >
             {isDark ? <GithubIconDark className='rrss-icon'/> : <GithubIconLight className='rrss-icon'/>}
-          </button>
-          <button
-            className='rrss-btn'
-            onClick={() => window.open('https://www.linkedin.com/in/albert-castro-albacete-38204615a/')}
-          >
-            <LinkedinIcon className='rrss-icon'/>
           </button>
         </div>
       </div>
