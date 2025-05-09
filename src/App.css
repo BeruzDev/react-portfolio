@@ -71,7 +71,7 @@
   }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2250px) {
   .app {
     section {
       padding: 5rem 15%;
@@ -91,7 +91,7 @@ MEDIA QUERYS
 }
 
 
-@media (min-width: 2560px) {
+@media (min-width: 2250px) {
 
 }
 */

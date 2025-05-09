@@ -1,9 +1,38 @@
 import React from 'react'
+import '../../styles/About.css'
+import AboutImg from '../../assets/Images/Albert/about-img.png'
+import ExperienceElement from '../../components/ExperienceElement/ExperienceElement'
+import { useExperienceElement } from '../../hooks/useExperienceElement'
+
 
 const About = () => {
+	const { dataToFill } = useExperienceElement()
+
 	return (
-		<div className='about'>
-			ABOUT
+		<div className='about-cont'>
+			<div className='about-img-section'>
+				<img src={AboutImg} className='about-img' alt='about-img'/>
+			</div>
+			<div className='about-text-section'>
+				<div className='experience-elements'>
+					{dataToFill.map((item, index) => (
+						<ExperienceElement 
+							key={index}
+							icon={item.icon}
+							tittle={item.tittle}
+							description={item.description}
+							descriptionBold={item.descriptionBold}
+							button={item.button}
+							onclick={item.onclick}
+						/>
+					))}
+				</div>
+				<div className='experience-text'>
+					<p className='text'>
+              Soy <b>Albert Castro</b>, desarrollador web, enfocado en aprender y profundizar en React, MongoDB y SQL, y  Node.js con Express. He realizado prácticas en Kennwort Consulting & Technologies, donde trabajé en proyectos Saas reales enfocados en la venta de entradas y control de acceso de gimnasios. Con 10 años de experiencia previa como modelista en el sector automovilistico, con un entorno exigente, destaco por mi capacidad de trabajo en equipo y resolución de problemas. Siempre dispuesto a mejorar.
+          </p>
+				</div>
+			</div>
 		</div>
 	)
 }
