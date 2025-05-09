@@ -137,6 +137,10 @@
 
 		.profile{
 			padding: 2rem;
+
+			.profile-img{
+				height: 250px;
+			}
 		}
 
 		.sumary{
@@ -144,13 +148,13 @@
 
 			.text{
 				line-height: 1.5;
-				margin-bottom: 3rem;
+				margin-bottom: 2rem;
 			}
 
 			.btns{
 				flex-direction: column;
 				align-items: center;
-				margin-bottom: 3rem;
+				margin-bottom: 2rem;
 
 				.cv{
 					font-size: 1.25rem;
@@ -167,11 +171,11 @@
 
 			.rrss{
 				.rrss-btn{
-					width: 4rem;
-					height: 4rem;
+					width: 3rem;
+					height: 3rem;
 					.rrss-icon{
-						width: 4em;
-						height: 4em;
+						width: 3em;
+						height: 3em;
 					}
 				}
 			}
