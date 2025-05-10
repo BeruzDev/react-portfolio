@@ -78,7 +78,7 @@ const Home = ({ isDark }) => {
             <button
               className="rrss-small-btn"
               onClick={() =>
-                window.open('/public/Documents/CV_Albert_Castro.pdf')
+                window.open('/Documents/CV_Albert_Castro.pdf')
               }
             >
               {isDark ? (
