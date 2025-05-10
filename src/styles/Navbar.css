@@ -161,6 +161,12 @@
 	}
 }
 
+@media (min-width: 1920px){
+	.navbar{
+		padding: 1rem 15%;
+	}
+}
+
 @media (min-width: 2250px) {
 	.navbar{
 		padding: 1rem 15%;

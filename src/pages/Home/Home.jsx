@@ -16,7 +16,6 @@ import GithubSmall from '../../assets/Icons/Other/github.svg?react'
 
 const Home = ({ isDark }) => {
   const { isSmallMobile } = useHamburguer()
-  console.log('is small mobile -> ', isSmallMobile)
 
   return (
     <div className="home-cont">

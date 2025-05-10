@@ -14,7 +14,7 @@
 
 			.about-img{
 				width: 300px;
-				border-radius: 60px;
+				border-radius: 52px;
 			}
 		}
 
@@ -30,6 +30,7 @@
 				gap: 1rem;
 
 				.exp-element{
+					width: 275px;
 					border: 1px solid #6d6d6d;;
 					border-radius: 20px;
 					padding: 1rem;
@@ -90,4 +91,18 @@
 			}
 		}
 	}
+}
+
+@media (max-width: 899px) {
+
+}
+
+@media (min-width: 1920px) {
+	#about{
+		padding: 5rem 15%;
+	}
+}
+
+@media (min-width: 2250px) {
+
 }
