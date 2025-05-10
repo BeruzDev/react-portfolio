@@ -34,7 +34,7 @@ const Home = ({ isDark }) => {
               <button
                 className="cv"
                 onClick={() =>
-                  window.open('/public/Documents/CV_Albert_Castro.pdf')
+                  window.open('/Documents/CV_Albert_Castro.pdf')
                 }
               >
                 Descargar CV

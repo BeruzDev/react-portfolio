@@ -12,7 +12,7 @@ export const useExperienceElement = () => {
       button: 'Referencias',
       onclick: () =>
         window.open(
-          '/public/Documents/KENNWORT_CartaRecomendacionCastellano_AlbertCastroAlbacete.pdf'
+          '/Documents/KENNWORT_CartaRecomendacionCastellano_AlbertCastroAlbacete.pdf'
         ),
     },
     {
@@ -23,7 +23,7 @@ export const useExperienceElement = () => {
       button: 'Recomendación',
       onclick: () =>
         window.open(
-          '/public/Documents/EDAG_CartaRecomendacion_AlbertCastroAlbacete_CENSORED.pdf'
+          '/Documents/EDAG_CartaRecomendacion_AlbertCastroAlbacete_CENSORED.pdf'
         ),
     },
     {
@@ -34,7 +34,7 @@ export const useExperienceElement = () => {
       button: 'Expediente',
       onclick: () =>
         window.open(
-          '/public/Documents/finishedz_grade_certificate_CENSORED.pdf'
+          '/Documents/finishedz_grade_certificate_CENSORED.pdf'
         ),
     },
   ]
