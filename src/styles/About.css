@@ -95,7 +95,31 @@
 	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px){
+	#about{
+		.about-cont{
+			display: flex;
+			flex-direction: column;
+			
+			.about-text-section{
+				.experience-elements{
+					display: flex;
+					flex-direction: column;
+					padding: 0 1.5rem;
+				}
+
+				.experience-text{
+					padding: 0 1.5rem;
+					.text{
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
 	#about{
 		.about-cont{
 			display: flex;
