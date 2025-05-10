@@ -174,5 +174,46 @@
 }
 
 @media (min-width: 2250px) {
+	#about{
+		.about-cont{
+			.about-img-section{
+				.about-img{
+					width: 450px;
+					border-radius: 78px;
+				}
+			}
 
+			.about-text-section{
+				.experience-elements{
+					.exp-element{
+						.exp-text{
+							.exp-tittle{
+								font-size: 1.2rem;
+							}
+
+							.exp-description{
+								font-size: 1.1rem;
+							}
+
+							.exp-description-bold{
+								font-size: 1.2rem;
+								text-align: center;
+							}
+
+							.exp-btn{
+								font-size: 1.2rem;
+								width: 200px;
+							}
+						}
+					}
+				}
+
+				.experience-text{
+					.text{
+						font-size: 1.3rem;
+					}
+				}
+			}
+		}
+	}
 }
