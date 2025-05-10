@@ -12,7 +12,7 @@ export const useExperienceElement = () => {
       button: 'Referencias',
       onclick: () =>
         window.open(
-          '../../public/Documents/KENNWORT_CartaRecomendacionCastellano_AlbetCastroAlbacete.pdf'
+          '/Documents/KENNWORT_CartaRecomendacionCastellano_AlbetCastroAlbacete.pdf'
         ),
     },
     {
