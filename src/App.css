@@ -94,15 +94,22 @@
 
 /* 
 MEDIA QUERYS
-
-@media (max-width: 899px) {
+mobile
+@media (max-width: 500px) {
 
 }
 
+tablet
+@media (max-width: 900px) {
+
+}
+
+hasta 24"
 @media (min-width: 1920px) {
 
 }
 
+a partir de 27"
 @media (min-width: 2250px) {
 
 }
