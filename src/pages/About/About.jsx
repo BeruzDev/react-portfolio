@@ -24,15 +24,15 @@ const About = () => {
 				</div>
 				<div className='about-text-section'>
 					<div className='experience-elements'>
-						{dataToFill.map((item, index) => (
+						{dataToFill.map((element, index) => (
 							<ExperienceElement 
 								key={index}
-								icon={item.icon}
-								tittle={item.tittle}
-								description={item.description}
-								descriptionBold={item.descriptionBold}
-								button={item.button}
-								onclick={item.onclick}
+								icon={element.icon}
+								tittle={element.tittle}
+								description={element.description}
+								descriptionBold={element.descriptionBold}
+								button={element.button}
+								onclick={element.onclick}
 							/>
 						))}
 					</div>
