@@ -215,6 +215,16 @@
 @media (min-width: 2250px) {
 	#about{
 		.section{
+			.name-section{
+				.section-subtitle{
+					font-size: 1.5rem;
+				}
+
+				.section-title{
+					font-size: 2.5rem;
+				}
+			}
+
 			.about-cont{
 				.about-img-section{
 					.about-img{
