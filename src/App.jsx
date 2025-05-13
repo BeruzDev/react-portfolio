@@ -26,7 +26,7 @@ function App() {
           <Skills />
         </section>
         <section id="projects">
-          <Projects />
+          <Projects isDark={isDark}/>
         </section>
         <section id="contact">
           <Contact />

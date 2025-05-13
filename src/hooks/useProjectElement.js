@@ -20,93 +20,106 @@ import TypeScript from '../assets/Icons/Logos/typescript.svg?react'
 import SocketDark from '../assets/Icons/Logos/Socket.io_dark.svg?react'
 import SocketLigth from '../assets/Icons/Logos/Socket.io_light.svg?react'
 
-
 export const useProjectElement = () => {
+  const techIcon = (icon) => ({ light: icon, dark: icon })
+
   const dataToFill = [
-		{
-			image: ToggleImg,
-			title: 'Hide Your Comments',
-			description: 'Extensión Para Visual Studio Code',
-			technologies: [TypeScript],
-			github: 'Github',
-			githubOnclik: () => window.open('https://github.com/BeruzDev/vsc_extension_toggle_comments'),
-			link: 'Marketplace',
-			linkOnclick: () => window.open('https://marketplace.visualstudio.com/items?itemName=BeruzDev.toggle-comments-visibility'),
-		},
-		{
-			image: TypingImg,
-			title: 'A Typing Game',
-			description: 'Practica Tu Mecanografía',
-			technologies: [
-				{
-					light: ReactLight, 
-					dark: ReactDark
-				},
-				Sass
+    {
+      image: ToggleImg,
+      title: 'Toggle Comments',
+      description: 'Extensión VSCode',
+      technologies: [
+				techIcon(TypeScript)
 			],
-			github: 'Github',
-			githubOnclik: () => window.open('https://github.com/BeruzDev/a-typing-game'),
-			link: 'Link',
-			linkOnclick: () => window.open('https://atypinggame.netlify.app/'),
-		},
-		{
-			image: ChatImg,
-			title: 'NodeJs Chat',
-			description: 'Chatea en tiempo real',
-			technologies: [
-				NodeJs,
-				{
-					light: ExpressLight,
-					dark: ExpressDark
-				},
-				{
-					light: SocketLigth,
-					dark: SocketDark
-				},
-				MySql
+      github: 'Github',
+      githubOnclik: () =>
+        window.open(
+          'https://github.com/BeruzDev/vsc_extension_toggle_comments'
+        ),
+      link: 'Marketplace',
+      linkOnclick: () =>
+        window.open(
+          'https://marketplace.visualstudio.com/items?itemName=BeruzDev.toggle-comments-visibility'
+        ),
+    },
+    {
+      image: TypingImg,
+      title: 'A Typing Game',
+      description: 'Practica Mecanografía',
+      technologies: [
+        {
+          light: ReactLight,
+          dark: ReactDark,
+        },
+        techIcon(Sass),
+      ],
+      github: 'Github',
+      githubOnclik: () =>
+        window.open('https://github.com/BeruzDev/a-typing-game'),
+      link: 'Link',
+      linkOnclick: () => window.open('https://atypinggame.netlify.app/'),
+    },
+    {
+      image: ChatImg,
+      title: 'NodeJs Chat',
+      description: 'Chatea en tiempo real',
+      technologies: [
+        techIcon(NodeJs),
+        {
+          light: ExpressLight,
+          dark: ExpressDark,
+        },
+        {
+          light: SocketLigth,
+          dark: SocketDark,
+        },
+        techIcon(MySql),
+      ],
+      github: 'Github',
+      githubOnclik: () =>
+        window.open('https://github.com/BeruzDev/Chat-node.js'),
+      link: 'Link',
+      linkOnclick: () => window.open(''),
+    },
+    {
+      image: IchibanImg,
+      title: 'Ichiban Clon',
+      description: 'Animación de scroll',
+      technologies: [
+				techIcon(Html), 
+				techIcon(Css), 
+				techIcon(JavaScript)
 			],
-			github: 'Github',
-			githubOnclik: () => window.open('https://github.com/BeruzDev/Chat-node.js'),
-			link: 'Link',
-			linkOnclick: () => window.open(''),
-		},
-		{
-			image: IchibanImg,
-			title: 'Ichiban Clon',
-			description: 'Animación de scroll clonada de ichiban.bike',
-			technologies: [
-				Html,
-				Css,
-				JavaScript
-			],
-			github: 'Github',
-			githubOnclik: () => window.open('https://github.com/BeruzDev/ichiban-scroll'),
-			link: 'Link',
-			linkOnclick: () => window.open('https://ichiban-clone.netlify.app/'),
-		},
-		{
-			image: CraftImg,
-			title: 'Craft it!',
-			description: 'Acortador de URLs',
-			technologies: [
-				NodeJs,
-				{
-					light: ExpressLight,
-					dark: ExpressDark,
-				},
-				Supabase,
-				{
-					light: ReactLight,
-					dark: ReactDark,
-				},
-				Css
-			],
-			github: 'Github',
-			githubOnclik: () => window.open('https://github.com/BeruzDev/link-shortener'),
-			link: 'Link',
-			linkOnclick: () => window.open('https://craftit.vercel.app/'),
-		},
-	]
+      github: 'Github',
+      githubOnclik: () =>
+        window.open('https://github.com/BeruzDev/ichiban-scroll'),
+      link: 'Link',
+      linkOnclick: () => window.open('https://ichiban-clone.netlify.app/'),
+    },
+    {
+      image: CraftImg,
+      title: 'Craft it!',
+      description: 'Acortador de URLs',
+      technologies: [
+        techIcon(NodeJs),
+        {
+          light: ExpressLight,
+          dark: ExpressDark,
+        },
+        techIcon(Supabase),
+        {
+          light: ReactLight,
+          dark: ReactDark,
+        },
+        techIcon(Css),
+      ],
+      github: 'Github',
+      githubOnclik: () =>
+        window.open('https://github.com/BeruzDev/link-shortener'),
+      link: 'Link',
+      linkOnclick: () => window.open('https://craftit.vercel.app/'),
+    },
+  ]
 
   return { dataToFill }
 }
