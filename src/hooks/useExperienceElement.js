@@ -8,7 +8,7 @@ export const useExperienceElement = () => {
       icon: Practicas,
       title: 'Experiencia En Desarrollo Web',
       description: 'Cuatro meses de practicas en',
-      descriptionBold: 'Kennwort Consulting & Technologies',
+      descriptionBold: 'Kennwort Consulting',
       button: 'Referencias',
       onclick: () =>
         window.open(
