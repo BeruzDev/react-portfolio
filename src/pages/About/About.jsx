@@ -28,7 +28,7 @@ const About = () => {
 							<ExperienceElement 
 								key={index}
 								icon={element.icon}
-								tittle={element.tittle}
+								title={element.title}
 								description={element.description}
 								descriptionBold={element.descriptionBold}
 								button={element.button}

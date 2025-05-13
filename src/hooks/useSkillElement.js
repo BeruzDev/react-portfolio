@@ -6,7 +6,7 @@ export const useSkillElement = () => {
   const dataToFill = [
     {
       icon: Frontend,
-      tittle: 'Frontend',
+      title: 'Frontend',
       tech: [
 				'HTML', 
 				'CSS', 
@@ -17,7 +17,7 @@ export const useSkillElement = () => {
     },
     {
       icon: Backend,
-      tittle: 'Backend',
+      title: 'Backend',
       tech: [
 				'NodeJS', 
 				'Express', 
@@ -28,7 +28,7 @@ export const useSkillElement = () => {
     },
     {
       icon: SoftSkills,
-      tittle: 'Soft Skills',
+      title: 'Soft Skills',
       tech: [
         'Trabajo en equipo',
         'Pensamiento crítico',

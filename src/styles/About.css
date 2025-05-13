@@ -73,7 +73,7 @@
 							justify-content: center;
 							align-items: center;
 	
-							.exp-tittle{
+							.exp-title{
 								font-size: .8rem;
 								margin-bottom: 1rem;
 							}
@@ -237,7 +237,7 @@
 					.experience-elements{
 						.exp-element{
 							.exp-text{
-								.exp-tittle{
+								.exp-title{
 									font-size: 1.2rem;
 								}
 

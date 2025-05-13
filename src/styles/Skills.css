@@ -37,7 +37,7 @@
 				border: 1px solid #6d6d6d;
 				border-radius: 1rem;
 
-				.skill-tittle-section{
+				.skill-title-section{
 					display: flex;
 					flex-direction: row;
 					align-items: center;
@@ -53,7 +53,7 @@
 						color: #6d6d6d;
 					}
 
-					.skill-tittle{
+					.skill-title{
 						font-size: 1.5rem;
 						font-weight: 500;
 						color: #6d6d6d;
@@ -117,12 +117,12 @@
 
 			.skills-cont{
 				.skills-element{
-					.skill-tittle-section{
+					.skill-title-section{
 						.skill-icon{
 							height: 1.6rem;
 						}
 
-						.skill-tittle{
+						.skill-title{
 							font-size: 1.2rem;
 						}
 					}
@@ -166,13 +166,13 @@
 
 			.skills-cont{
 				.skills-element{
-					.skill-tittle-section{
+					.skill-title-section{
 						.skill-icon{
 							width: 2.5rem;
 							height: 2.5rem;
 						}
 
-						.skill-tittle{
+						.skill-title{
 							font-size: 2.5rem;
 						}
 					}

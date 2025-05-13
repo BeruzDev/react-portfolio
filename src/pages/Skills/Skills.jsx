@@ -17,7 +17,7 @@ const Skills = () => {
 					<SkillsElement 
 						key={index}
 						icon={element.icon}
-						tittle={element.tittle}
+						title={element.title}
 						tech={element.tech}
 					/>
 				))}

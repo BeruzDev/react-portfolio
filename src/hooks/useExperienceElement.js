@@ -6,7 +6,7 @@ export const useExperienceElement = () => {
   const dataToFill = [
     {
       icon: Practicas,
-      tittle: 'Experiencia En Desarrollo Web',
+      title: 'Experiencia En Desarrollo Web',
       description: 'Cuatro meses de practicas en',
       descriptionBold: 'Kennwort Consulting & Technologies',
       button: 'Referencias',
@@ -17,7 +17,7 @@ export const useExperienceElement = () => {
     },
     {
       icon: Modelista,
-      tittle: 'Experiencia Como Modelista',
+      title: 'Experiencia Como Modelista',
       description: 'Diez años como Clay Modeler en',
       descriptionBold: 'EDAG Engineering Spain, S.L.',
       button: 'Recomendación',
@@ -28,7 +28,7 @@ export const useExperienceElement = () => {
     },
     {
       icon: Estudios,
-      tittle: 'Educación',
+      title: 'Educación',
       description: 'ILERNA Formación Profesional',
       descriptionBold: 'Desarrollo de aplicaciones Web',
       button: 'Expediente',
