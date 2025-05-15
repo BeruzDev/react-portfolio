@@ -68,7 +68,7 @@ export const useProjectElement = () => {
       image: ChatImg,
       title: 'NodeJs Chat',
       description:
-        'Aplicación de chat en tiempo real desarrollada para permitir la comunicación entre múltiples usuarios, el contenido del chat se borra automáticamente cada 15 minutos. Para probarla como un solo usuario, basta con abrir varias pestañas y simular distintas personas.',
+        'Aplicación de chat en tiempo real desarrollada para permitir la comunicación entre varios usuarios, el contenido del chat se borra automáticamente cada 15 minutos. Para probarla como un solo usuario, abrir varias pestañas y simular distintas personas.',
       technologies: [
         techIcon(NodeJs),
         {
@@ -103,7 +103,7 @@ export const useProjectElement = () => {
       image: CraftImg,
       title: 'Craft it!',
       description:
-        'Craft it! es una aplicación web full stack que permite a los usuarios acortar enlaces largos, gestionarlos de forma sencilla y exportarlos en formato JSON. Está pensada para ser intuitiva, moderna y segura, con soporte para autenticación mediante OAuth con Google y GitHub, y también permite su uso sin registro.',
+        'Aplicación web full stack que permite a los usuarios acortar links, gestionarlos de forma sencilla y exportarlos en formato JSON. Está pensada para ser intuitiva, moderna y segura, con autenticación mediante OAuth con Google y GitHub. ¡Prueba sin registrarse!.',
       technologies: [
         techIcon(NodeJs),
         {
