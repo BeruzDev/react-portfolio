@@ -121,7 +121,7 @@
 						.project-btns {
 							position: absolute;
 							top: 165px;
-							left: 0px;
+							left: 20px;
 							width: 100px;
 							display: flex;
 							flex-direction: row;
