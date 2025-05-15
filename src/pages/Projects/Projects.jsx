@@ -1,6 +1,4 @@
 import React from 'react'
-import 'swiper/css'
-import 'swiper/css/navigation'
 import '../../styles/Projects.css'
 import { useProjectElement } from '../../hooks/useProjectElement.js'
 import ProjectElement from '../../components/ProjectElement/ProjectElement.jsx'
