@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import ToggleImg from '../assets/Images/Projects/project-1.png'
 import TypingImg from '../assets/Images/Projects/project-2.png'
 import ChatImg from '../assets/Images/Projects/project-3.png'
@@ -19,6 +20,10 @@ import Supabase from '../assets/Icons/Logos/supabase.svg?react'
 import TypeScript from '../assets/Icons/Logos/typescript.svg?react'
 import SocketDark from '../assets/Icons/Logos/Socket.io_dark.svg?react'
 import SocketLigth from '../assets/Icons/Logos/Socket.io_light.svg?react'
+import GithubIcon from '../assets/Icons/Other/github.svg?react'
+import GithubIconLight from '../assets/Icons/Other/github-white.svg?react'
+import LinkIcon from '../assets/Icons/Other/link.svg?react'
+import LinkIconWhite from '../assets/Icons/Other/link-white.svg?react'
 
 export const useProjectElement = () => {
   const techIcon = (icon) => ({ light: icon, dark: icon })
@@ -27,16 +32,15 @@ export const useProjectElement = () => {
     {
       image: ToggleImg,
       title: 'Toggle Comments',
-      description: 'Extensión VSCode',
-      technologies: [
-				techIcon(TypeScript)
-			],
-      github: 'Github',
+      description:
+        'Extensión para VSCode que permite alternar la visibilidad de los comentarios sin modificar el código, ideal para estudiantes que necesitan tomar muchos apuntes y, al mismo tiempo, quieren ver el código con claridad.',
+      technologies: [techIcon(TypeScript)],
+      github: { light: GithubIcon, dark: GithubIconLight },
       githubOnclik: () =>
         window.open(
           'https://github.com/BeruzDev/vsc_extension_toggle_comments'
         ),
-      link: 'Marketplace',
+      link: { light: LinkIcon, dark: LinkIconWhite },
       linkOnclick: () =>
         window.open(
           'https://marketplace.visualstudio.com/items?itemName=BeruzDev.toggle-comments-visibility'
@@ -45,7 +49,8 @@ export const useProjectElement = () => {
     {
       image: TypingImg,
       title: 'A Typing Game',
-      description: 'Practica Mecanografía',
+      description:
+        'Una aplicación web diseñada para mejorar la velocidad y precisión en la mecanografía. A Typing Game permite a los usuarios practicar con palabras, frases, o incluso fragmentos de código en varios lenguajes, proporcionando un seguimiento de métricas en tiempo real.',
       technologies: [
         {
           light: ReactLight,
@@ -53,16 +58,17 @@ export const useProjectElement = () => {
         },
         techIcon(Sass),
       ],
-      github: 'Github',
+      github: { light: GithubIcon, dark: GithubIconLight },
       githubOnclik: () =>
         window.open('https://github.com/BeruzDev/a-typing-game'),
-      link: 'Link',
+      link: { light: LinkIcon, dark: LinkIconWhite },
       linkOnclick: () => window.open('https://atypinggame.netlify.app/'),
     },
     {
       image: ChatImg,
       title: 'NodeJs Chat',
-      description: 'Chatea en tiempo real',
+      description:
+        'Aplicación de chat en tiempo real desarrollada para permitir la comunicación entre múltiples usuarios, el contenido del chat se borra automáticamente cada 15 minutos. Para probarla como un solo usuario, basta con abrir varias pestañas y simular distintas personas.',
       technologies: [
         techIcon(NodeJs),
         {
@@ -75,31 +81,29 @@ export const useProjectElement = () => {
         },
         techIcon(MySql),
       ],
-      github: 'Github',
+      github: { light: GithubIcon, dark: GithubIconLight },
       githubOnclik: () =>
         window.open('https://github.com/BeruzDev/Chat-node.js'),
-      link: 'Link',
-      linkOnclick: () => window.open(''),
+      link: { light: LinkIcon, dark: LinkIconWhite },
+      linkOnclick: () => window.open('https://chat-node-js-2u1m.onrender.com/'),
     },
     {
       image: IchibanImg,
       title: 'Ichiban Clon',
-      description: 'Animación de scroll',
-      technologies: [
-				techIcon(Html), 
-				techIcon(Css), 
-				techIcon(JavaScript)
-			],
-      github: 'Github',
+      description:
+        'Ichiban Scroll Animation es una página web que presenta una animación de desplazamiento muy bien hecha. He clonado y mejorado algunos puntos de la experiencia de usuario y la interfaz.',
+      technologies: [techIcon(Html), techIcon(Css), techIcon(JavaScript)],
+      github: { light: GithubIcon, dark: GithubIconLight },
       githubOnclik: () =>
         window.open('https://github.com/BeruzDev/ichiban-scroll'),
-      link: 'Link',
+      link: { light: LinkIcon, dark: LinkIconWhite },
       linkOnclick: () => window.open('https://ichiban-clone.netlify.app/'),
     },
     {
       image: CraftImg,
       title: 'Craft it!',
-      description: 'Acortador de URLs',
+      description:
+        'Craft it! es una aplicación web full stack que permite a los usuarios acortar enlaces largos, gestionarlos de forma sencilla y exportarlos en formato JSON. Está pensada para ser intuitiva, moderna y segura, con soporte para autenticación mediante OAuth con Google y GitHub, y también permite su uso sin registro.',
       technologies: [
         techIcon(NodeJs),
         {
@@ -113,13 +117,15 @@ export const useProjectElement = () => {
         },
         techIcon(Css),
       ],
-      github: 'Github',
+      github: { light: GithubIcon, dark: GithubIconLight },
       githubOnclik: () =>
         window.open('https://github.com/BeruzDev/link-shortener'),
-      link: 'Link',
+      link: { light: LinkIcon, dark: LinkIconWhite },
       linkOnclick: () => window.open('https://craftit.vercel.app/'),
     },
   ]
 
-  return { dataToFill }
+  const reverseData = dataToFill.reverse()
+
+  return { reverseData }
 }

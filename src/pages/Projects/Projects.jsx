@@ -1,10 +1,12 @@
 import React from 'react'
+import 'swiper/css'
+import 'swiper/css/navigation'
 import '../../styles/Projects.css'
 import { useProjectElement } from '../../hooks/useProjectElement.js'
 import ProjectElement from '../../components/ProjectElement/ProjectElement.jsx'
 
-const Projects = ({isDark}) => {
-  const { dataToFill } = useProjectElement()
+const Projects = ({ isDark }) => {
+  const { reverseData } = useProjectElement()
 
   return (
     <div className="section">
@@ -13,21 +15,21 @@ const Projects = ({isDark}) => {
         <p className="section-title">Proyectos</p>
       </div>
       <div className="projects-cont">
-				{dataToFill.map((element, index) => (
-					<ProjectElement 
-					key={index}
-					image={element.image}
-					title={element.title}
-					description={element.description}
-					technologies={element.technologies}
-					github={element.github}
-					githubOnclick={element.githubOnclik}
-					link={element.link}
-					linkOnclick={element.linkOnclick}
-					isDark={isDark}
-				/>
-				))}
-			</div>
+					{reverseData.map((element, index) => (
+							<ProjectElement
+								key={index}
+								image={element.image}
+								title={element.title}
+								description={element.description}
+								technologies={element.technologies}
+								github={element.github}
+								githubOnclick={element.githubOnclik}
+								link={element.link}
+								linkOnclick={element.linkOnclick}
+								isDark={isDark}
+							/>
+					))}
+      </div>
     </div>
   )
 }

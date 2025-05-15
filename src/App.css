@@ -3,6 +3,10 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --gradient-fade-light: rgba(240, 240, 240, 1); /* color fondo light */
+  --gradient-fade-dark: rgba(36, 36, 36, 1);    /* color fondo dark */
+  --gradient-fade-transparent: rgba(255, 255, 255, 0); /* transparente */
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -49,6 +53,7 @@
 .dark {
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  --gradient-fade: var(--gradient-fade-dark);
 
   button {
     color: rgba(255, 255, 255, 0.87);
@@ -62,6 +67,7 @@
 .light {
   color: #242424;
   background-color: #f0f0f0;
+  --gradient-fade: var(--gradient-fade-light);
 
   button {
     color: #242424;
@@ -95,7 +101,7 @@
     }
 
     footer {
-      padding: 0.5rem 15%;
+      margin: 0.5rem 15%;
     }
   }
 }
