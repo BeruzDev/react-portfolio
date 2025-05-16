@@ -57,7 +57,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 80%;
             pointer-events: none;
             background: linear-gradient(
               to bottom,
@@ -201,15 +201,82 @@
 
 
 @media (min-width: 501px) and (max-width: 900px) {
+	#projects{
+		.section{
+			.name-section{
+				.section-subtitle{
+					display: none;
+				}
+			}
 
+			.projects-cont{
+				padding: 0;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: auto;
+
+				.project-element{
+					margin-bottom: 150px;
+					
+					.project-info-cont{
+						top: 25%;
+
+						.project-text{
+							.project-technologies{
+								top: 200px;
+								gap: 2rem;
+							}
+
+							.project-btns{
+								top: 250px;
+								left: 275px;
+
+								.btn{
+									padding: .5rem 1rem;
+
+									.btn-text{
+										height: 2em;
+										width: 2em;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 
 @media (min-width: 1920px) {
+	#projects{
+		.section{
+			.projects-cont{
+				gap: 3rem 5rem;
+				padding: 0 15%;
 
+				.project-element{
+					margin-bottom: 100px;
+					
+				}
+			}
+		}
+	}
 }
 
 
 @media (min-width: 2250px) {
+	#projects{
+		.section{
+			.projects-cont{
+				gap: 3rem 5rem;
+				padding: 0;
 
+				.project-element{
+					margin-bottom: 100px;
+					
+				}
+			}
+		}
+	}
 }
