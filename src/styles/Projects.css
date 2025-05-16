@@ -169,9 +169,15 @@
 					margin-bottom: 250px;
 					
 					.project-info-cont{
+						top: 25%;
+
 						.project-text{
 							.project-technologies{
 								top: 280px;
+							}
+
+							.project-description{
+								font-size: .8rem;
 							}
 
 							.project-btns{
