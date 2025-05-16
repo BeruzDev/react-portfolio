@@ -257,6 +257,7 @@
 					.experience-text{
 						.text{
 							font-size: 1rem;
+							line-height: 2;
 						}
 					}
 				}
@@ -330,13 +331,14 @@
 
 				.bot-row{
 					position: absolute;
-					top: 400px;
+					top: 490px;
 					left: calc(4rem + 300px);
 					padding-top: 0;
 
 					.experience-text{
 						.text{
 							font-size: 1.8rem;
+							line-height: 1.5;
 						}
 					}
 				}	
