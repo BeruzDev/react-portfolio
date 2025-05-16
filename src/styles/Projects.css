@@ -156,3 +156,46 @@
     }
   }
 }
+
+
+@media (max-width: 500px) {
+	#projects{
+		.section{
+			.projects-cont{
+				grid-template-columns: 1fr;
+				grid-template-rows: auto;
+
+				.project-element{
+					margin-bottom: 250px;
+					
+					.project-info-cont{
+						.project-text{
+							.project-technologies{
+								top: 280px;
+							}
+
+							.project-btns{
+								top: 350px;
+								left: 180px;
+							}
+						}
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: 501px) and (max-width: 900px) {
+
+}
+
+
+@media (min-width: 1920px) {
+
+}
+
+
+@media (min-width: 2250px) {
+
+}
