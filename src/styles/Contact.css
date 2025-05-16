@@ -105,6 +105,10 @@
 					text-decoration: none;
 					color: currentColor;
 					font-size: 1.2rem;
+
+					&:hover{
+						color: #6d6d6d;
+					}
 				}
 			}
 		}
