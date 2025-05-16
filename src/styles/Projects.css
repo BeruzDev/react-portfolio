@@ -162,6 +162,7 @@
 	#projects{
 		.section{
 			.projects-cont{
+				padding: 0;
 				grid-template-columns: 1fr;
 				grid-template-rows: auto;
 
@@ -173,16 +174,22 @@
 
 						.project-text{
 							.project-technologies{
-								top: 280px;
-							}
-
-							.project-description{
-								font-size: .8rem;
+								top: 230px;
+								gap: 2rem;
 							}
 
 							.project-btns{
-								top: 350px;
-								left: 180px;
+								top: 300px;
+								left: 250px;
+
+								.btn{
+									padding: .5rem 1rem;
+
+									.btn-text{
+										height: 2em;
+										width: 2em;
+									}
+								}
 							}
 						}
 					}
