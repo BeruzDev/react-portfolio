@@ -8,11 +8,11 @@ export const useSkillElement = () => {
       icon: Frontend,
       title: 'Frontend',
       tech: [
+        'React',
+        'Java Script', 
 				'HTML', 
 				'CSS', 
-				'SASS', 
-				'Java Script', 
-				'React'
+				'SASS',
 			],
     },
     {
