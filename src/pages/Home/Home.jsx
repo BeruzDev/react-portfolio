@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/Home.css'
 import { useHamburguer } from '../../hooks/useHamburguer'
-import ProfileImg from '../../assets/Images/Albert/profile-img.png'
+import ProfileImg from '../../assets/Images/Albert/profile-img.webp'
 import GithubIconDark from '../../assets/Icons/Logos/GitHub_dark.svg?react'
 import GithubIconLight from '../../assets/Icons/Logos/GitHub_light.svg?react'
 import LinkedinIcon from '../../assets/Icons/Logos/linkedin.svg?react'

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../styles/About.css'
-import AboutImg from '../../assets/Images/Albert/about-img.png'
+import AboutImg from '../../assets/Images/Albert/about-img.webp'
 import ExperienceElement from '../../components/ExperienceElement/ExperienceElement'
 import { useExperienceElement } from '../../hooks/useExperienceElement'
 
