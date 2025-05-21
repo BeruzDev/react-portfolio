@@ -33,10 +33,10 @@ const ProjectElement = ({
             })}
           </div>
           <div className="project-btns">
-            <button className="btn" onClick={githubOnclick}>
+            <button aria-label='open website repository on github' className="btn" onClick={githubOnclick}>
               <GithubIcon className="btn-text" />
             </button>
-            <button className="btn" onClick={linkOnclick}>
+            <button aria-label='open website project' className="btn" onClick={linkOnclick}>
               <LinkIcon className="btn-text" />
             </button>
           </div>

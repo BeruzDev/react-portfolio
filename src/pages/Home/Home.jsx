@@ -52,6 +52,7 @@ const Home = ({ isDark }) => {
             </div>
             <div className="rrss">
               <button
+                aria-label='open linkedin'
                 className="rrss-btn"
                 onClick={() =>
                   window.open(
@@ -62,6 +63,7 @@ const Home = ({ isDark }) => {
                 <LinkedinIcon className="rrss-icon" />
               </button>
               <button
+                aria-label='open BeruzDev github'
                 className="rrss-btn"
                 onClick={() => window.open('https://github.com/BeruzDev')}
               >
