@@ -36,6 +36,7 @@
 
 				.input{
 					background-color: transparent;
+					color: currentColor;
 					font-size: 1rem;
 					padding: 1rem;
 					border: 1px solid #6d6d6d;
@@ -132,6 +133,7 @@
 				padding: 5%;
 				display: flex;
 				justify-content: center;
+				width: 100vw;
 
 				.contact-form{
 					padding: 2rem;
@@ -150,8 +152,9 @@
 			.contact-info{
 				flex-direction: column;
 				gap: 1rem;
-				width: 90vw;
+				width: 100vw;
 				height: auto;
+				border: 0;
 			}
 		}
 	}
@@ -191,16 +194,16 @@
 					width: 700px;
 
 					.input{
-						font-size: 1.25rem;
+						font-size: 1rem;
 					}
 
 					#message{
-						font-size: 1.25rem;
+						font-size: 1rem;
 						height: 15rem;
 					}
 
 					.submit{
-						font-size: 1.25rem;
+						font-size: 1rem;
 						width: 6rem;
 					}
 				}
@@ -211,12 +214,12 @@
 				
 				.contact-section{
 					.contact-icon{
-						width: 2em;
-						height: 2em;
+						width: 1.5em;
+						height: 1.5em;
 					}
 
 					.contact-text{
-						font-size: 1.25rem;
+						font-size: 1.rem;
 					}
 				}
 			}
