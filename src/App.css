@@ -28,7 +28,7 @@
   position: relative;
 
   section {
-    min-height: 100vh;
+    min-height: 100dvh;
     padding: 5rem 2rem;
     box-sizing: border-box;
   }
