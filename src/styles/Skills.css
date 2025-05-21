@@ -48,13 +48,13 @@
 
 					.skill-icon{
 						stroke-width: 2;
-						height: 1.8rem;
-						width: 1.8rem;
+						height: 1.5rem;
+						width: 1.5rem;
 						color: #6d6d6d;
 					}
 
 					.skill-title{
-						font-size: 1.5rem;
+						font-size: 1.2rem;
 						font-weight: 500;
 						color: #6d6d6d;
 					}
@@ -79,7 +79,7 @@
 						}
 
 						.tech{
-							font-size: 1.2rem;
+							font-size: 1rem;
 						}
 					}
 				}
