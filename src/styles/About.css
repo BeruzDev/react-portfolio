@@ -237,6 +237,16 @@
 	}
 }
 
+@media (min-width: 1300px) and (max-width: 1919px){
+	#about{
+		.section{
+			.about-cont{
+				padding: 0 15%;
+			}
+		}
+	}
+}
+
 @media ( min-width: 1920px) {
 	#about{
 		padding: 5rem 15%;
